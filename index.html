@@ -9,7 +9,38 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- 섹션들이 여기 들어갑니다 -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__logo">홍길동</a>
+      <nav class="navbar__menu" id="navMenu">
+        <a href="#about">소개</a>
+        <a href="#services">서비스</a>
+        <a href="#portfolio">포트폴리오</a>
+        <a href="#blog">블로그</a>
+        <a href="#contact" class="btn btn-primary">문의하기</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <p class="hero__badge">웹 개발 강의 · 홈페이지 제작</p>
+        <h1 class="hero__title">안녕하세요,<br /><span>홍길동</span>입니다</h1>
+        <p class="hero__desc">
+          실무 중심 웹 개발 강의와 맞춤형 홈페이지 제작으로<br />
+          당신의 온라인 성장을 함께 만들어갑니다.
+        </p>
+        <div class="hero__cta">
+          <a href="https://open.kakao.com/YOUR_LINK" class="btn btn-primary" target="_blank" rel="noopener">강의 신청하기</a>
+          <a href="mailto:your@email.com" class="btn btn-outline">제작 문의하기</a>
+        </div>
+      </div>
+    </section>
+  </main>
   <script src="main.js"></script>
 </body>
 </html>
